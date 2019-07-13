@@ -1,0 +1,56 @@
+﻿/*@font-face {*/
+/*font-family:'SourceHanSansCN';*/
+/*src:url(../font/SourceHanSansCN-Regular.otf);*/
+/*}*/
+*{ margin:0; padding:0; list-style:none; text-decoration:none; border:none; font-family:'SourceHanSansCN'; color:#101010; outline:none;}
+
+.wrap{ background:linear-gradient(to bottom,#2ccdd9 0%, #84ce8a 100%); background:-moz-linear-gradient(to bottom,#2ccdd9 0%, #84ce8a 100%); background:-webkit-gradient(linear,to bottom,#2ccdd9 0%, #84ce8a 100%); background:-o-linear-gradient(to bottom,#2ccdd9 0%, #84ce8a 100%); background:-ms-linear-gradient(to bottom,#2ccdd9 0%, #84ce8a 100%); background:-webkit-linear-gradient(to right,#2ccdd9 0%, #84ce8a 100%); width:100%; max-width:640px; min-width:320px; margin:0 auto; display:block;}
+.box{ width:100%; max-width:640px; min-width:320px; margin:0 auto; display:block; padding-bottom:8rem; background:url(../images/bg1.png) repeat; background-size:0.5rem auto;}
+.red{ color:#f84064;}
+
+.head{ width:100%; display:block; background:url(../images/bg.jpg) center top no-repeat; background-size:100% auto;}
+.logo{ width:100%; padding-top:0.5rem; display:block;}
+.logo img{ display:block; margin:0 auto; width:50%;}
+.top{ width:100%; display:block; position:relative;}
+.top img{ width:100%; display:block;}
+
+.txt,.time{ width:100%; display:block; position:absolute; left:0;}
+.txt{ top:35%;}
+.txt p{ width:70%; display:block; margin:0 auto; font-size:0.7rem; line-height:1.2rem; margin-top:0.6rem; text-align:justify;}
+.time{ bottom:4%;}
+.time p{ width:100%; display:block; margin:0 auto; font-size:0.7rem; line-height:1.2rem; text-align:center;}
+.count-box{ width:100%; display:block; margin:0 auto; font-size:0.7rem; line-height:1.2rem; text-align:center;}
+#countdown-clock{display: inline-block;}
+
+
+.tab{ width:100%; display:block; background:url(../images/tab-bg1.png) center top no-repeat; background-size:100% auto;}
+.tab-nav{ width:89%; height:2rem; padding-top:1.15rem; display:-webkit-flex; display:-moz-box; display:-ms-flexbox; display:flex; -webkit-justify-content:space-between; -moz-justify-content:space-between; -ms-justify-content:space-between; -o-justify-content:space-between; justify-content:space-between; margin:0 auto;}
+.tab-nav li{ text-align:center; width:47%; cursor:pointer; line-height:2rem; font-size:0.8rem;}
+.tab-nav li.on{ color:#f74968;}
+
+.tab-con{ width:100%; display:block; margin:0 auto;}
+.tab-box{ width:100%; display:none;}
+.tab-box-on{ display:block;}
+.tab-box-con{ width:100%; background:url(../images/tab-bg2.png) center top no-repeat; background-size:100% auto; margin-top:1rem; padding-bottom:0.45rem;}
+.tab-box-con ul{ width:85%; margin:0 auto; padding-top:2rem; display:block;}
+.tab-box-con ul li{ display:-webkit-flex; display:-moz-box; display:-ms-flexbox; display:flex; padding:0 0 1.55rem; width:100%; overflow:hidden; height:3.6rem; line-height:3.6rem;}
+.tab-box-con ul li i{ width:4.8rem; height:3.6rem; border-radius:5px; overflow:hidden; margin-left:2%;}
+.tab-box-con ul li i img{width:100%;display:block;height: 100%;}
+.tab-box-con ul li p{ font-size:0.5rem; width:66%; margin-left:2%; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; overflow:hidden; line-height:0.8rem; white-space:normal;}
+.tab-box-con ul li p span{ display:block; font-size:0.7rem; line-height:1.2rem;}
+.tab-box-con ul li .notxt{ width:100%; color:#979795; font-size:0.9rem; text-align:center; display:block;}
+.tab-box-con .btn{ display:block; width:100%; line-height:1.3rem;}
+.tab-box-con .btn a{ font-size:0.6rem; color:#f74968; display:block; width:44%; margin:0 auto; text-align:center;}
+
+.more{width:100%;text-align: center;margin-top: 0.5rem;}
+.more img{width: 5rem;height: 0.8rem;}
+
+
+.foot{ width:100%; max-width:640px; min-width:320px; display:block; position:fixed; bottom:0; z-index:99;}
+.foot a{ display:block;}
+.foot a img{ width:100%; display:block;}
+
+@media screen and (width:375px){
+	.tab-box-con ul{ padding-top:2.25rem;}
+	.tab-box-con ul li{ height:3.5rem; line-height:3.5rem;}
+}

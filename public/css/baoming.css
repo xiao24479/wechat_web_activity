@@ -1,0 +1,184 @@
+﻿/* CSS Document */
+/*@font-face {
+  font-family:'SourceHanSansCN';
+  src:url(../font/SourceHanSansCN-Regular.otf);
+}*/
+*{ margin:0; padding:0; list-style:none; text-decoration:none; border:none; font-family:'simsun'; color:#101010; outline:none;}
+
+.box{ width:100%; max-width:640px; min-width:320px; margin:0 auto; display:block; background-repeat:no-repeat; background-position:center top; background-size:100% auto;}
+
+.head{ width:100%; background:linear-gradient(to bottom,#37dddd 13%, #44dcd0 13%); background:-moz-linear-gradient(to bottom,#37dddd 13%, #44dcd0 13%); background:-webkit-gradient(linear,to bottom,#37dddd 13%, #44dcd0 13%); background:-o-linear-gradient(to bottom,#37dddd 13%, #44dcd0 13%); background:-ms-linear-gradient(to bottom,#37dddd 13%, #44dcd0 13%); background:-webkit-linear-gradient(to bottom,#37dddd 13%, #44dcd0 13%); padding:0.5rem 0;}
+
+.logo{ width:100%; display:block;}
+.logo img{ display:block; margin:0 auto; width:50%;}
+
+.top{ width:100%; display:block; position:relative;}
+.top img{ width:100%; display:block;}
+
+.list{ position:absolute; width:100%; top:52%; display:block;}
+.list ul{ width:65%; display:block; margin:0 auto;}
+.list ul li{ font-size:0.7rem; width:100%; display:-webkit-flex; display:-moz-box; display:-mz-flexbox; display:flex; margin:0.5rem 0;}
+.list ul li i{ width:0.7rem; height:0.7rem; border-radius:50%; color:#fff; font-size:0.45rem; background:#f8a92a; display:block; text-align:center; line-height:0.7rem; margin-top:0.2rem;}
+.list ul li span{flex:1;-webkit-flex:1;display:block;margin-left:1%;text-align:justify;position:relative;z-index: 0;letter-spacing:1px;}
+.list ul li:nth-of-type(1) span:before,.list ul li:nth-of-type(4) span:before{content:"";height:0.3rem;background:#f8a92a;width:5.1rem;position:absolute;left:0;top:0.6rem;z-index:-1;}
+.list ul li:nth-of-type(4) span:before{ width:4.8rem;}
+
+.main{ width:100%; display:block;}
+.main form{ width:100%; display:block;}
+.item-input,.ps{ width:96%; margin:0 auto; display:block; padding:0.25rem 0;}
+.item-input{ border-top:0.05rem dashed #30d3d2;}
+.main .item-input:nth-of-type(1){ border-top:0;}
+.item-input span,.ps span{ font-size:0.7rem; color:#9b9b9b; display:block; padding:0.25rem 0; height:1.2rem; line-height:1.2rem;}
+.ps p{ font-size:0.6rem; color:#020202; display:block; padding:0.25rem 0; text-align:justify;}
+
+.f-box{ display:-webkit-flex; display:-moz-box; display:-mz-flexbox; display:flex; -webkit-justify-content:space-between; -moz-justify-content:space-between; -ms-justify-content:space-between; -o-justify-content:space-between; justify-content:space-between; width:100%; padding:0.25rem 0;}
+.f-box textarea{ width:100%; font-size:0.7rem; line-height:1rem; resize:none }
+.f-box label{ font-size:0.7rem; color:#020202; display:block; width:20%; height:1.2rem; line-height:1.2rem;}
+.f-box p{ width:78%; display:block; border-bottom:0.05rem solid #020202; height:1.2rem; line-height:1.2rem;}
+.f-box p input{ width:100%; display:block; height:100%; line-height:1.2rem; font-size:0.7rem; color:#020202;}
+.f-box p input::-webkit-input-placeholder{ color:#020202;}
+.f-box p input:-moz-placeholder{ color:#020202;}
+.f-box p input::-moz-placeholder{ color:#020202;}
+.f-box p input:-ms-input-placeholder{ color:#020202;}
+
+
+.btn{ width:100%; margin-top:1rem; display:block;}
+.btn button{ cursor: pointer;color:#fff; width:100%; font-size:0.8rem; display:block; background:#30d3d2; height:2rem; line-height:2rem; letter-spacing:10px;}
+
+.item {
+	width: 130px;
+	height: 130px;
+	position: relative;
+	margin: 20px;
+}
+.addImg {
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	cursor: pointer;
+}
+.preview,.preBlock{
+	position: absolute;
+	display: block;
+	width: 130px;
+	height: 130px;
+	left: 0;
+	top: 0;
+}
+.delete {
+	width: 30px;
+	position: absolute;
+	right: -30px;
+	top: -15px;
+	cursor: pointer;
+	display: none;
+}
+.preBlock img {
+	display: block;
+	width: 130px;
+	height: 130px;
+}
+.upload_input{
+	display: block;
+	width: 0;
+	height: 0;
+	-webkit-opacity: 0.0;
+	/* Netscape and Older than Firefox 0.9 */
+	-moz-opacity: 0.0;
+	/* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+	-khtml-opacity: 0.0;
+	/* IE9 + etc...modern browsers */
+	opacity: .0;
+	/* IE 4-9 */
+	filter:alpha(opacity=0);
+	/*This works in IE 8 & 9 too*/
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	/*IE4-IE9*/
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+
+button[disabled] {
+	cursor: not-allowed;
+	filter: alpha(opacity=65);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	opacity: .65;
+}
+
+.load-box{
+	position:fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.shadow{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 555;
+}
+
+.llwrap{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -2rem;
+	margin-top: -0.5rem;
+	width: 5.5rem;
+	height: 1rem;
+	z-index: 999;
+}
+
+.loading{
+	width: 100%;
+	height: 0.4rem;
+}
+.loading span{
+	display: inline-block;
+	width: 0.4rem;
+	height: 100%;
+	margin-right: 0.125rem;
+	border-radius: 50%;
+	background: lightgreen;
+	-webkit-animation: load 1.04s ease infinite;
+}
+.loading span:last-child{
+	margin-right: 0px;
+}
+.tips{
+	color: #ffffff;
+	font-size: 0.45rem;
+	font-weight: bold;
+}
+@-webkit-keyframes load{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.loading span:nth-child(1){
+	-webkit-animation-delay:0.13s;
+}
+.loading span:nth-child(2){
+	-webkit-animation-delay:0.26s;
+}
+.loading span:nth-child(3){
+	-webkit-animation-delay:0.39s;
+}
+.loading span:nth-child(4){
+	-webkit-animation-delay:0.52s;
+}
+.loading span:nth-child(5){
+	-webkit-animation-delay:0.65s;
+}

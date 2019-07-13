@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="item">
+    <img class="addImg" onclick="clickImg(this);" src="{{ public }}images/upload.jpg" />
+    <input name="file" id="file" type="file" class="upload_input" onchange="change(this)" accept="image/*;capture=camera" />
+    <div class="preBlock">
+        <img class="preview" id="preview" alt="" name="pic" />
+    </div>
+</div>
+</body>
+</html>

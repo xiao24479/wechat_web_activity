@@ -1,0 +1,16 @@
+{
+    "name": "administrator/weixin",
+    "authors": [
+        {
+            "name": "whatever",
+            "email": "449155917@qq.com"
+        }
+    ],
+    "require": {
+        "overtrue/wechat": "^4.1",
+        "catfan/medoo": "^1.6",
+        "pagerfanta/pagerfanta": "^2.1",
+        "filp/whoops": "^2.3",
+        "twig/twig": "^2.10"
+    }
+}
